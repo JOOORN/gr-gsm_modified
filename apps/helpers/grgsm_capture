@@ -79,7 +79,7 @@ class gsm_capture(gr.top_block):
 
         self.file_sink = blocks.file_sink(gr.sizeof_gr_complex*1, \
                                           output_filename, False)
-        self.file_sink.set_unbuffered(False)
+        self.file_sink.set_unbuffered(True)
 
         ##################################################
         # Connections
